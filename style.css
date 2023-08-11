@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;500&display=swap');
+
+* {
+    font-family: 'Sora';
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    margin: 40px;
+    background-color: #171d25;
+}
+
+.section-margin {
+    margin: 40px 80px;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#avatar-name {
+    display: flex;
+}
+
+#avatar-name h1 {
+    display: inline-block;
+    font-size: 65px;
+    margin: 0;
+    color: #1a9ffe;
+    padding-top: 7px;
+}
+
+#avatar-name img {
+    width: 94px;
+    height: 94px;
+    border-radius: 4px;
+}
+
+#user-title h1 {
+    font-size: 65px;
+}
+
+#page-visibility {
+    margin-top: 66px;
+    min-width: 280px;
+    max-width: 450px;
+    padding: 16px 22px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .2);
+    display: flex;
+    flex-direction: column;
+}
+
+#page-visibility select {
+    margin-top: 8px;
+    width: 256px;
+    height: 18px;
+    padding: 12px;
+}
+
+#page-visibility button {
+    margin-top: 8px;
+}
+
+#page-visibility svg {
+    width: 19px;
+    height: 19px;
+}
+
+#user-highlights {
+    /* margin: 80px; */
+    text-align: center;
+    font-size: 24px;
+}
+
+#user-highlights h4 {
+    margin: 80px 0 40px 0;
+}
+
+#user-highlights .highlight-game-box {
+    max-width: 30%;
+    min-width: 20%;
+    height: 75vh;
+    background-image: url("https://cdn.cloudflare.steamstatic.com/steam/apps/632470/library_hero.jpg?t=1681291304");
+    background-size: cover;
+	background-position: center;
+    border-radius: 5px;
+    padding: 26px;
+}
+
+#user-highlights .highlight-game-box .highlight-game-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+#highlight-games {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 40px 0;
+}
+
+.yirshare_ShareCtn_3wBwg {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 22px;
+    border-radius: 4px;
+    min-width: 280px;
+    max-width: 450px;
+    margin: 66px auto 24px auto;
+    width: fit-content;
+    text-align: center;
+    background: rgba(255,255,255,.2);
+}
