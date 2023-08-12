@@ -12,107 +12,90 @@ body {
     background-color: #171d25;
 }
 
-.section-margin {
-    margin: 40px 80px;
+
+#avatar {
+    width: 65px;
+    height: 65px;
+    border-radius: 6px;
 }
 
 #header {
-    display: flex;
-    justify-content: space-between;
+    position: relative;
+    margin: 0 60px;
+    margin-bottom: 120px;
 }
 
-#avatar-name {
-    display: flex;
-}
-
-#avatar-name h1 {
-    display: inline-block;
+#header span {
     font-size: 65px;
-    margin: 0;
+    position: absolute;
+    top: -7px;
+    margin-left: 15px;
     color: #1a9ffe;
-    padding-top: 7px;
 }
 
-#avatar-name img {
-    width: 94px;
-    height: 94px;
-    border-radius: 4px;
-}
-
-#user-title h1 {
+#header h1 {
     font-size: 65px;
-}
-
-#page-visibility {
-    margin-top: 66px;
-    min-width: 280px;
-    max-width: 450px;
-    padding: 16px 22px;
-    text-align: center;
-    background-color: rgba(255, 255, 255, .2);
-    display: flex;
-    flex-direction: column;
-}
-
-#page-visibility select {
-    margin-top: 8px;
-    width: 256px;
-    height: 18px;
-    padding: 12px;
-}
-
-#page-visibility button {
-    margin-top: 8px;
-}
-
-#page-visibility svg {
-    width: 19px;
-    height: 19px;
+    height: 65px;
+    margin: 0;
+    padding: 0;
 }
 
 #user-highlights {
-    /* margin: 80px; */
     text-align: center;
-    font-size: 24px;
-}
-
-#user-highlights h4 {
-    margin: 80px 0 40px 0;
-}
-
-#user-highlights .highlight-game-box {
-    max-width: 30%;
-    min-width: 20%;
-    height: 75vh;
-    background-image: url("https://cdn.cloudflare.steamstatic.com/steam/apps/632470/library_hero.jpg?t=1681291304");
-    background-size: cover;
-	background-position: center;
-    border-radius: 5px;
-    padding: 26px;
-}
-
-#user-highlights .highlight-game-box .highlight-game-info {
-    display: flex;
-    justify-content: space-between;
-}
-
-#highlight-games {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: row;
     margin: 40px 0;
 }
 
-.yirshare_ShareCtn_3wBwg {
+#user-highlights h4 {
+    font-size: 25px;
+    margin: 0 75px;
+    margin-bottom: 50px;
+}
+
+#user-highlights h5 {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.highlight-box {
+    background-color: #1a9ffe;
+    padding: 16px 10px;
     display: flex;
     flex-direction: column;
-    padding: 16px 22px;
-    border-radius: 4px;
-    min-width: 280px;
-    max-width: 450px;
-    margin: 66px auto 24px auto;
-    width: fit-content;
-    text-align: center;
-    background: rgba(255,255,255,.2);
+    justify-content: space-between;
+    width: 250px;
+    height: 250px;
+    border-radius: 12px;
+}
+
+.highlight-box-title {
+    /* margin-bottom: 100px; */
+}
+
+.highlight-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.highlight-info h1 {
+    font-size: 40px;
+}
+
+.highlight-info p {
+    font-size: 14px;
+}
+
+#highlight {
+    /* display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap; */
+
+    height: 85vh;
+    min-height: clamp(500px, 55vw, 55vw);
+    max-height: clamp(70vw, 70vw, 1380px);
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    gap: 10px;
 }
