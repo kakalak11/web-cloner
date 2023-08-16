@@ -1,5 +1,144 @@
+html {
+    font-size: 20px;
+}
+
 * {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
+}
+
+body h2,
+body p {
+    text-align: center;
+    margin-top: 32px;
+}
+
+#feature-product {
+    margin: 0 50px;
+    padding: 0 25px;
+}
+
+.section-header {
+    margin-top: 52px;
+    font-size: 3rem;
+}
+
+.section-id {
+    margin-top: 40px;
+    display: flex;
+}
+
+.section-number {
+    display: inline-block;
+    border: 1px solid grey;
+    padding: 10px;
+    font-size: 2rem;
+}
+
+.section-id h4 {
+    padding-top: 20px;
+    margin-left: 10px;
+    font-size: 1.25rem;
+}
+
+.section-small-description {
+    text-align: start;
+    margin-top: 24px;
+}
+
+.feature-info {
+    margin-top: 32px;
+    display: flex;
+}
+
+.feature-image {
+    width: 50%;
+}
+
+.feature-image img {
+    width: 100%;
+}
+
+.feature-description {
+    width: 50%;
+    padding-left: 30px;
+}
+
+.feature-link img {
+    width: 25%;
+    margin-right: 2%;
+}
+
+.feature-link p {
+    padding: 0;
+    padding-bottom: 0.75rem;
+    margin: 0;
+    text-align: start;
+    font-size: 0.75rem;
+}
+
+.feature-link {
+    display: flex;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.feature-detail-header {
+    margin-top: 40px;
+    display: flex;
+    justify-content: stretch;
+    border: 1px solid grey;
+    height: 3rem;
+    position: relative;
+}
+
+.feature-detail-header h4 {
+    width: 50%;
+    text-align: center;
+    padding-top: 1.15rem;
+    font-size: 0.75rem;
+}
+
+.active::after {
+    content: "";
+    width: 50%;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.feature-detail-list {
+    padding: 32px;
+}
+
+.sunblock-header {
+    display: flex;
+    justify-content: space-between;
+    height: 2rem;
+}
+
+.sunblock-header h4 {
+    padding-top: 1rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    height: 100%;
+    background-color: #e3f2ff;
+}
+
+.sunblock-header h5 {
+    padding-top: 1rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    height: 100%;
+    font-size: 0.75rem;
+}
+
+.feature-detail-item {
+    padding-top: 32px;
 }
