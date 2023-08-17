@@ -8,6 +8,11 @@ html {
     margin: 0;
 }
 
+body {
+    max-width: 1226px;
+    margin: auto;
+}
+
 body h2,
 body p {
     text-align: center;
@@ -91,7 +96,7 @@ body p {
     margin-top: 40px;
     display: flex;
     justify-content: stretch;
-    border: 1px solid grey;
+    border: 1px solid #dadada;
     height: 3rem;
     position: relative;
 }
@@ -115,30 +120,37 @@ body p {
 
 .feature-detail-list {
     padding: 32px;
+    border-left: 1px solid #dadada;
+    border-right: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
 }
 
 .sunblock-header {
     display: flex;
     justify-content: space-between;
-    height: 2rem;
 }
 
 .sunblock-header h4 {
-    padding-top: 1rem;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-    height: 100%;
+    padding: 1rem 2.5rem;
     background-color: #e3f2ff;
 }
 
-.sunblock-header h5 {
-    padding-top: 1rem;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-    height: 100%;
-    font-size: 0.75rem;
+.sunblock-header h6 {
+    padding: 1rem 2.5rem;
 }
 
 .feature-detail-item {
     padding-top: 32px;
+    display: flex;
+}
+
+.feature-detail-item img {
+    width: 25%;
+}
+
+.feature-detail-item p {
+    margin-top: 0;
+    padding-left: 10px;
+    text-align: start;
+    font-size: 0.75rem;
 }
