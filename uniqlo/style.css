@@ -140,6 +140,7 @@ body p {
 .sunblock-header {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 32px;
 }
 
 .sunblock-header h4 {
@@ -152,8 +153,7 @@ body p {
 }
 
 .feature-detail-item {
-    padding-top: 32px;
-    display: flex;
+    display: flex;  
 }
 
 .feature-detail-item img {
@@ -169,4 +169,31 @@ body p {
 
 .current {
     display: inherit;
+}
+
+.feature-detail-item h6 {
+    font-size: 0.75rem;
+    padding-top: 0.3rem;
+    padding-left: 10px;
+}
+
+.feature-detail-item .icon {
+    height: 30px;
+    width: 30px;
+}
+
+
+.list-item {
+    margin-top: 32px;
+}
+
+.list-item p {
+    margin-top: 10px;
+    text-align: start;
+    font-size: 0.75rem;
+    padding: 0;
+}
+
+#feature-list > div:nth-child(1) {
+    margin-top: 0;
 }
