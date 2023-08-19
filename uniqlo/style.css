@@ -13,8 +13,43 @@ body {
     margin: auto;
 }
 
-body h2,
-body p {
+
+
+/* About Section */
+
+#about-section h2,
+#about-section h3 {
+    line-height: 1em;
+    text-align: center;
+    padding: 52px 0;
+}
+
+#about-section p {
+    margin-top: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#about-section img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.feature {
+    margin: 0 30px;
+}
+
+/* Product Section */
+
+#feature-product h2,
+#feature-product p {
     text-align: center;
     margin-top: 32px;
 }
@@ -153,11 +188,12 @@ body p {
 }
 
 .feature-detail-item {
-    display: flex;  
+    display: flex;
+    padding-top: 10px;
 }
 
 .feature-detail-item img {
-    width: 25%;
+    width: 150px;
 }
 
 .feature-detail-item p {
@@ -194,6 +230,6 @@ body p {
     padding: 0;
 }
 
-#feature-list > div:nth-child(1) {
+#feature-list>div:nth-child(1) {
     margin-top: 0;
 }
