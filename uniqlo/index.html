@@ -17,7 +17,8 @@
         <div class="feature">
             <h3>HAI CƠ CHẾ CHỐNG TIA UV TỐI ƯU</h3>
             <img src="https://im.uniqlo.com/global-cms/spa/resbc9141fb753a52c1695812de1e5020b1fr.jpg" alt="">
-            <p style="width: 50%;">Chúng tôi áp dụng công nghệ Chống tia UV tối ưu phụ thuộc vào chất liệu và cấu trúc của từng loại vải. Từ
+            <p style="width: 50%;">Chúng tôi áp dụng công nghệ Chống tia UV tối ưu phụ thuộc vào chất liệu và cấu trúc
+                của từng loại vải. Từ
                 trang phục của phụ nữ, nam giới, trẻ em và trẻ sơ sinh đến các phụ kiện như mũ và ô, chúng tôi đều cung
                 cấp nhiều loại sản phẩm khác nhau có xếp hạng từ UPF15 đến UPF50 +. Ngay cả những trang phục màu nhạt
                 của mùa xuân/hè, những sản phẩm này vẫn mang lại hiệu quả chống nắng hiệu quả để bạn có thể tự tin mặc
@@ -26,10 +27,42 @@
         <h3>UPF là gì?</h3>
         <img src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/uvcut/23ss/img/common/about_upf.jpg?1673513921972"
             alt="">
-        <p style="width: 50%;">UPF là chỉ số cho biết hiệu quả ngăn chặn tác hại trên da do tia UVA và UVB gây ra trong cùng một khoảng thời
+        <p style="width: 50%;">UPF là chỉ số cho biết hiệu quả ngăn chặn tác hại trên da do tia UVA và UVB gây ra trong
+            cùng một khoảng thời
             gian so sánh với điều kiện da không được che chắn. UPF được xếp loại từ 15 đến 50+.</p>
-        <p style="width: 50%; font-size: 12px; line-height: 18px;" class="note">Ví dụ: Mặc sản phẩm có chỉ số UPF40 sẽ giúp bảo vệ bạn khỏi bị cháy nắng trong thời gian dài hơn
+        <p style="width: 50%; font-size: 12px; line-height: 18px;" class="note">Ví dụ: Mặc sản phẩm có chỉ số UPF40 sẽ
+            giúp bảo vệ bạn khỏi bị cháy nắng trong thời gian dài hơn
             40 lần so với việc chỉ để da trần.</p>
+    </section>
+
+    <section id="user-comment">
+        <h3>BÌNH LUẬN CỦA KHÁCH HÀNG</h3>
+        <h4 class="center">Tôi đã thử và tin chọn giải pháp chống UV tối ưu.</h4>
+        <p class="center">Ngăn chặn hiệu quả HƠN 90%* tác hại từ các tia UV.</p>
+        <p class="center">*Theo chứng nhận số JIS L 1925:2019 của Nhật Bản</p>
+        <div class="swiper">
+            <div class="user-comment-box">
+                <img src="https://im.uniqlo.com/global-cms/spa/rese33a553009f4bc7d2e683f169d6cbbabfr.jpg" alt="">
+                <p>"Tự tin đi mọi nơi cùng “người bạn” áo parka chống UV bỏ túi tiện lợi."</p>
+                <br>
+                <p><strong>Tường Duy</strong></p>
+                <p>Freelance</p>
+            </div>
+            <div class="user-comment-box">
+                <img src="https://im.uniqlo.com/global-cms/spa/rese33a553009f4bc7d2e683f169d6cbbabfr.jpg" alt="">
+                <p>"Tự tin đi mọi nơi cùng “người bạn” áo parka chống UV bỏ túi tiện lợi."</p>
+                <br>
+                <p><strong>Tường Duy</strong></p>
+                <p>Freelance</p>
+            </div>
+            <div class="user-comment-box">
+                <img src="https://im.uniqlo.com/global-cms/spa/rese33a553009f4bc7d2e683f169d6cbbabfr.jpg" alt="">
+                <p>"Tự tin đi mọi nơi cùng “người bạn” áo parka chống UV bỏ túi tiện lợi."</p>
+                <br>
+                <p><strong>Tường Duy</strong></p>
+                <p>Freelance</p>
+            </div>
+        </div>
     </section>
 
 
@@ -119,27 +152,30 @@
     </section> -->
     <script>
         var detailHeader = document.getElementById('feature-detail-header');
-        var myDivs = Array.from(detailHeader.getElementsByTagName('*'));
-        var myLists = Array.from(document.getElementsByClassName('feature-detail-list'));
+        if (detailHeader) {
 
-        function resetTabs() {
-            myDivs.forEach(element => {
-                element.classList.remove('active');
-            });
-            myLists.forEach(element => {
-                element.classList.remove('current');
-            });
-        }
+            var myDivs = Array.from(detailHeader.getElementsByTagName('*'));
+            var myLists = Array.from(document.getElementsByClassName('feature-detail-list'));
 
-        if (myDivs) {
-            myDivs.forEach((element, index) => {
-                element.onclick = () => {
-                    resetTabs();
-                    // assume 2 tabs option is 2 list and relative with their index
-                    myLists[index].classList.add('current');
-                    element.classList.add('active');
-                }
-            })
+            function resetTabs() {
+                myDivs.forEach(element => {
+                    element.classList.remove('active');
+                });
+                myLists.forEach(element => {
+                    element.classList.remove('current');
+                });
+            }
+
+            if (myDivs) {
+                myDivs.forEach((element, index) => {
+                    element.onclick = () => {
+                        resetTabs();
+                        // assume 2 tabs option is 2 list and relative with their index
+                        myLists[index].classList.add('current');
+                        element.classList.add('active');
+                    }
+                })
+            }
         }
 
 
