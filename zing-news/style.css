@@ -1,4 +1,46 @@
+* {
+    margin: 0;
+}
+
 .logo {
     width: 152px;
     margin-bottom: 18px;
+}
+
+.image {
+    margin: 20px 0;
+    width: 100%;
+}
+
+body {
+	font-family: 'Be Vietnam Pro', sans-serif;
+	font-size: 18px;
+	line-height: 1.61;
+	font-weight: 400;
+	display: flex;
+	color: #292929;
+	justify-content: center;
+	align-items: center;
+	background: center / cover no-repeat url(https://zingnews.vn/static/goodbye_bg.jpg);
+}
+
+#announcement {
+	padding: 46px;
+	background: #fff;
+	border-radius: 20px;
+	box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);
+    max-width: 700px;
+    min-height: 100vh;
+    margin: 30px auto;
+}
+
+h1 {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 1.3125;
+	margin-bottom: 32px;
+}
+
+p:not(:first-of-type) {
+	margin-top: 27px;
 }
