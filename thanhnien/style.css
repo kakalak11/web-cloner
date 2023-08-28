@@ -1,15 +1,22 @@
 #header-bar {
-    background-color: #fafafa;
-    max-width: 100%;
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 0 10px;
+    margin: 0 auto;
     line-height: 3rem;
+    max-width: 1600px;
+    background-color: #fafafa;
 }
 
 #quick-nav span {
-    padding-right:  9px;
-    padding-left:  10px;
+    padding-right: 9px;
+    padding-left: 10px;
     border-right: 1px solid #d9d9d9;
+}
+
+#follow-bar {
+    display: flex;
 }
 
 .item {
